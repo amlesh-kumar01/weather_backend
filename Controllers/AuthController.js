@@ -46,6 +46,7 @@ const login = async (req, res) => {
             message: "Login Successful",
             jwtToken,
             success: true,
+            username: user.username
         });
         } else {
         res
